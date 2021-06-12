@@ -10,7 +10,7 @@
 
     // Check the data
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ");
+        header("Location: https://raj217.github.io/Omnifood/index.php?success=-1#form");
         exit;
     }
 
@@ -34,5 +34,5 @@
     mail($recipient, $subject, $email_content, $email_header) {
 
     // Redirect to the index.html page with sucess code
-    header("Loocation: ");
+    header("Loocation: https://raj217.github.io/Omnifood/index.php?success=1#form");
     }
