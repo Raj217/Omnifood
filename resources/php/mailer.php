@@ -39,14 +39,13 @@
 
     // Javascript Alert
     <script type="text/javascript">
-    
-    var success_val = $_POST['success']
+    var success_val = $_GET['success'];
 
     if success_val == 1 {
         window.alert("Thank You! Your message has been sent sucessfully.");
     } else {
         window.alert("Oops! Something went wrong. Please try again.");
     }
-    
-
     </script>
+
+?>
