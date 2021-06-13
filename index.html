@@ -2,6 +2,17 @@
 <html lang="en">
     <head>
         <title>Omnifood</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-64Q91YSFG0"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-64Q91YSFG0');
+        </script>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
@@ -347,13 +358,6 @@
                 <form method="post" action="resources/php/mailer.php" class="contact-form">
                     <div class="row">
 
-                        <?php
-                        if ($_GET['success'] == 1) {
-                            echo "<div class=\"form-message success\">Thank You! Your message has been sent sucessfully.</div>";
-                        } elseif ($_GET["success"] == -1) {
-                            echo "<div class=\"form-message fail\">Oops! Something went wrong. Please try again.</div>"
-                        }
-                        ?>
 
                     </div>
                     <div class='row'>

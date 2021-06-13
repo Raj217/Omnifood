@@ -10,7 +10,7 @@
 
     // Check the data
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: https://raj217.github.io/Omnifood/index.php?success=-1#form");
+        header("Location: http://omnifood.rf.gd/index.php?success=-1#form");
         exit;
     }
 
@@ -34,5 +34,19 @@
     mail($recipient, $subject, $email_content, $email_header) {
 
     // Redirect to the index.html page with sucess code
-    header("Loocation: https://raj217.github.io/Omnifood/index.php?success=1#form");
+    header("Loocation: http://omnifood.rf.gd/index.php?success=1#form");
     }
+
+    // Javascript Alert
+    <script type="text/javascript">
+    
+    var success_val = $_POST['success']
+
+    if success_val == 1 {
+        window.alert("Thank You! Your message has been sent sucessfully.");
+    } else {
+        window.alert("Oops! Something went wrong. Please try again.");
+    }
+    
+
+    </script>
